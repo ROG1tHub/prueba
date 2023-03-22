@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <script type="text/javascript" src="./Funciones.js"></script>
+    </head>
+<body>
+
+Nombre del cliente: <br>
+<input type="text" id = "nombre" placeholder="Ingrese un nombre:" >
+<div>
+    Material de la caja : <select name="material" id="material">
+    <option value="selected">Seleccione</option>
+    <option value="madera">Madera</option>
+    <option value="carton">Cartón</option>
+</select>
+</div>
+  <br>
+<form method="get">Seleccione el tamaño de la caja:</form>
+<label><input type="radio" name="tamanio" value="diminuta">Diminuta</label>
+<br>
+<label><input type="radio" name="tamanio" value="mediana">Mediana</label>
+<br>
+<label><input type="radio" name="tamanio" value="grande">Grande</label>
+<br>
+<div>
+    <label>Comentarios:
+    <br>    
+        <textarea id="comentario" name="comentario" placeholder="Deja tu comentario."></textarea>
+    </label>
+</div>
+<input type ="button" id= "btnE" value="Enviar." onclick="agregarPedido()">
+    <input type="text" id="enviarmsj" placeholder="" size="50px">
+</body>
+</html>
